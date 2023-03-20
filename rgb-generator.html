@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Rgb Generator</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+      }
+      .ubah-warna {
+        background-color: cadetblue;
+      }
+      .orange {
+        background-color: rgb(180, 36, 36);
+        z-index: 999;
+      }
+      .kotakMerah {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        margin: 10px auto;
+      }
+      .kotakHijau {
+        width: 20px;
+        height: 20px;
+        background-color: green;
+        margin: 10px auto;
+      }
+      .kotakBiru {
+        width: 20px;
+        height: 20px;
+        background-color: blue;
+        margin: 10px auto;
+      }
+
+      .opacity {
+        width: 20px;
+        height: 20px;
+        margin: 10px auto;
+      }
+      .rgb {
+        display: inline-block;
+        margin-right: 5px;
+        margin-top: -15px;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="tombol">
+      <h1>SIMPLE RGB GENERATOR</h1>
+      <button class="ubah-warna" type="button">Reset</button>
+    </div>
+
+    <br />
+    <div class="kotak kotakMerah"></div>
+    <div class="r">
+      <p class="rgb">R</p>
+      <input type="range" class="input-r" value="100" name="sMerah" min="0" max="255" />
+      <span class="value-r">0</span>
+    </div>
+
+    <div class="kotak kotakHijau"></div>
+    <div class="g">
+      <p class="rgb">G</p>
+      <input type="range" class="input-g" name="sHijau" min="0" max="255" />
+      <span class="value-g">0</span>
+    </div>
+
+    <div class="kotak kotakBiru"></div>
+    <div class="a">
+      <p class="rgb">B</p>
+      <input type="range" class="input-b" name="sBiru" min="0" max="255" />
+      <span class="value-b">0</span>
+    </div>
+
+    <script src="rgbGenerator.js"></script>
+  </body>
+</html>
